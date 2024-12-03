@@ -1,0 +1,99 @@
+/* Reseta estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header ul li {
+    margin: 0 1rem;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.projeto-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.projeto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+    }
+
+    .projetos-container {
+        flex-direction: column;
+    }
+}
+
+.animar {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
